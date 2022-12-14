@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 app.get('/saludo', (req, res) => {
   console.log('/saludo')
-  res.end('otro saludo')
+  res.end('otro saludo ' + process.env.DB_URL)
 })
 
 module.exports = app
